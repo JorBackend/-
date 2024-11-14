@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Terminal - Jonathan Baker</title>
+    <link rel="stylesheet" href="css/style.main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- SQL Terminal View -->
+    <div class="terminal" id="terminal-view">
+        <div class="terminal-header">
+            <div class="terminal-title">jonathan_baker@portfolio:~$</div>
+        </div>
+        
+        <div class="terminal-content">
+            <div class="welcome-message">
+                <p>Welcome to Jonathan Baker's SQL Terminal Portfolio</p>
+                <p>Type 'help' to see available commands</p>
+            </div>
+            
+            <div class="query-history"></div>
+            
+            <div class="input-line">
+                <span class="prompt">sql></span>
+                <input type="text" class="sql-input" autofocus spellcheck="false" placeholder="Enter your SQL query...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Traditional Portfolio View -->
+    <div class="portfolio-view" id="portfolio-view">
+        <nav class="portfolio-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section class="portfolio-section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hi, I'm <span class="name-highlight">Jonathan Baker</span>, a Fullstack Computer Science student specializing in Software Development at Southern Indiana Career & Technical Center.</p>
+                    <div class="contact-icons">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                            <span class="contact-tooltip">jonathanr.baker@gmail.com</span>
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                            <span class="contact-tooltip">812-618-5267</span>
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="contact-tooltip">Newburgh, IN</span>
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                            <span class="contact-tooltip">github.com/JorBackend</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/IMG_5627 - Copy.JPEG" alt="Jonathan Baker">
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Languages</h3>
+                    <p>Java, Python, JavaScript</p>
+                    <p>HTML/CSS, SQL, C++</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools skill-icon"></i>
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, GitHub, VS Code</p>
+                    <p>Eclipse, IntelliJ IDEA</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code skill-icon"></i>
+                    <h3>Development</h3>
+                    <p>Object-Oriented Programming</p>
+                    <p>Full Stack Development</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain skill-icon"></i>
+                    <h3>Soft Skills</h3>
+                    <p>Problem Solving</p>
+                    <p>Team Collaboration</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>SQL Terminal Portfolio</h3>
+                    <p>An interactive portfolio website featuring a unique SQL terminal interface where visitors can query information about me using SQL commands. Built with vanilla JavaScript and CSS.</p>
+                    <p><small>Tech: HTML, CSS, JavaScript, SQL</small></p>
+                    <div class="project-links">
+                        <a href="https://github.com/jonathanbaker7/sql-terminal-portfolio" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Inventory Management System</h3>
+                    <p>A Java-based inventory management system with a graphical user interface for tracking products, managing stock levels, and generating reports.</p>
+                    <p><small>Tech: Java, JavaFX, SQL</small></p>
+                    <div class="project-links">
+                        <a href="https://github.com/jonathanbaker7/inventory-management" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p>A web application that provides real-time weather information and forecasts using weather API integration. Features include location search and detailed weather metrics.</p>
+                    <p><small>Tech: HTML, CSS, JavaScript, API Integration</small></p>
+                    <div class="project-links">
+                        <a href="https://github.com/jonathanbaker7/weather-dashboard" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-title">Co-Founder</span>
+                        <span class="experience-date">Sep 2024 - Present</span>
+                    </div>
+                    <div class="experience-company">PoliTech, Evansville, IN</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Provide unbiased political insights to enlighten 18-24-year-old voters</li>
+                            <li>Offer AI-driven tools to track politicians' policies, voting records, and bias-free news</li>
+                            <li>Address low youth turnout with accessible, nonpartisan political resources and analytics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-title">Web Development Intern</span>
+                        <span class="experience-date">Jun 2024 - July 2024</span>
+                    </div>
+                    <div class="experience-company">Nextech, Evansville, IN</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Learn from web developers and create HTML5 websites</li>
+                            <li>Develop team building and communication skills</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-title">Team Member Guest Services</span>
+                        <span class="experience-date">Aug 2024 - Present</span>
+                    </div>
+                    <div class="experience-company">The Fresh Market, Evansville, IN</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Provide impeccable customer service throughout every interaction</li>
+                            <li>Ability to work in a fast-paced environment and handle multiple tasks</li>
+                            <li>Maintained a clean and organized checkout area, including front-sale items</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-input" rows="5" placeholder="Message"></textarea>
+                </div>
+                <button class="submit-btn">Send Message</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Mode Switch Button -->
+    <button class="mode-switch" id="mode-switch">
+        Switch to Portfolio View
+    </button>
+
+    <script src="scripts/script.main.js"></script>
+</body>
+</html> 
